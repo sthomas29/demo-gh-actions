@@ -1,0 +1,12 @@
+﻿name: Exécution de l’installation des modules
+on: workflow_dispatch
+jobs:
+  InstallationModulesJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Activation lecture du repo
+        uses: actions/checkout@v4
+      - name: Comptage du nb de modules installer
+        run: nb=ls node_modules | wc -l  #liste avec ls  et compte avec wc
+      - name: Fin du premier Job
+        run: echo "Il y a bien $nb modules installés dans ./node_modules"
