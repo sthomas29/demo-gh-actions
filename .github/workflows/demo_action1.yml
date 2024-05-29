@@ -1,4 +1,4 @@
-﻿name: Exécution de l’installation des modules
+﻿name: Exécution Installation des modules
 on: workflow_dispatch
 jobs:
   InstallationModulesJob:
