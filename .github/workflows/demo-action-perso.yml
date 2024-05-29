@@ -8,6 +8,10 @@ jobs:
         steps:
             - name: Activation lecture du repo
               uses: actions/checkout@v4
+            - name: Installation modules
+              run: |
+                npm i @actions/core
+                npm i @actions/github
             - name: Utilisation d’une action personnalisée dans un Workflow
               uses: ./.github/actions/demo-action-perso
               with:
