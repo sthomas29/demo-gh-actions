@@ -11,6 +11,6 @@ jobs:
           npm ci # CI = Clean Install
           ls .
       - name: Comptage du nb de modules installés
-        run: nb=ls node_modules | wc -l  #liste avec ls  et compte avec wc
+        run: nb=$(ls node_modules | wc -l)  #liste avec ls  et compte avec wc
       - name: Fin du premier Job
         run: echo "Il y a bien $nb modules installés dans ./node_modules"
