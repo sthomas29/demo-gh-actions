@@ -1,0 +1,15 @@
+﻿name: Workflow test runners
+on: [push, workflow_dispatch]
+jobs:
+  buildJob: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1ère operation Bash
+        run: echo "Hello GitHub Action !"
+  testJob: 
+    runs-on: windows-latest
+    steps:
+      - name: Simulation d’exécution de PowerShell
+        run:  |
+            Write-host "Hello PowerShell From Github"
+            $PSVersionTable #Affiche la version de PowerShell
