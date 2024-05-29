@@ -1,0 +1,13 @@
+﻿name: 'Démonstration action perso'
+description: 'Une action GitHub personnalisée'
+inputs:
+  my-input:
+    description: 'Une entrée personnalisée'
+    required: true
+    default: 'world'
+outputs:
+  my-output:
+    description: 'Une sortie personnalisée'
+runs:
+  using: 'node12'
+  main: 'index.js'
