@@ -12,5 +12,5 @@ jobs:
           ls .
       - name: Comptage du nb de modules installés
         run: |
-          nb=$(ls node_modules | wc -l)  #liste avec ls  et compte avec wc
+          nb=$(ls node_modules | wc -l)  #liste avec ls et compte avec wc
           echo "Il y a bien $nb modules installés dans ./node_modules"
