@@ -1,0 +1,12 @@
+﻿name: WorkFlow démo action perso
+
+on: [push, workflow_dispatch]
+
+jobs:
+    testAction: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: Utilisation d’une action personnalisée dans un Workflow
+              uses: ./.github/actions/demo-action-perso
+              with:
+                my-input: 'GitHub'
