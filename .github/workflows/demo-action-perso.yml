@@ -6,6 +6,8 @@ jobs:
     testAction: 
         runs-on: ubuntu-latest
         steps:
+            - name: Activation lecture du repo
+              uses: actions/checkout@v4
             - name: Utilisation d’une action personnalisée dans un Workflow
               uses: ./.github/actions/demo-action-perso
               with:
