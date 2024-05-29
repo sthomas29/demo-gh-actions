@@ -7,7 +7,9 @@ jobs:
       - name: Activation lecture du repo
         uses: actions/checkout@v4
       - name: Installation effective
-        run: npm ci # CI = Clean Install
+        run: |
+          npm ci # CI = Clean Install
+          ls .
       - name: Comptage du nb de modules installés
         run: nb=ls node_modules | wc -l  #liste avec ls  et compte avec wc
       - name: Fin du premier Job
