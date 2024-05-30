@@ -1,5 +1,6 @@
 ﻿// Commentaire ajouté pour tester l'annulation manuelle d'un workflow.
 
+// Commentaire ajouté pour tester le skip workflow
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
