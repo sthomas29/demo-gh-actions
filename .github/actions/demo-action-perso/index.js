@@ -1,4 +1,6 @@
-﻿import { createRequire } from "module";
+﻿// Commentaire ajouté pour tester l'annulation manuelle d'un workflow.
+
+import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
 const core = require('@actions/core');

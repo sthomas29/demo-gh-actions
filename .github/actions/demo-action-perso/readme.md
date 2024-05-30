@@ -1,5 +1,4 @@
-﻿markdown
-# My Custom Action
+﻿# My Custom Action
 
 Cette action GitHub dit bonjour à l'utilisateur.
 
